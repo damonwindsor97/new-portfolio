@@ -18,5 +18,16 @@ export const NavMenu = style({
 export const NavItem = style({
     display: 'inline-block',
     marginRight: '1.5em',
-    fontSize: `${vars.fontSize["4x"]}`
+    fontSize: `${vars.fontSize["4x"]}`,
+    textDecoration: 'none',
+    cursor: 'pointer',
+    ':hover': {
+        color: `${vars.colors.darkComplentary}`
+    }
+})
+
+export const NavLink = style({
+    ':hover': {
+        color: `${vars.colors.darkComplentary}`
+    }
 })

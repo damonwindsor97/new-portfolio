@@ -1,8 +1,10 @@
-
+import Showcase from '../components/features/Showcase'
 
 function ProjectsPage() {
   return (
-    <div>ProjectsPage</div>
+    <div>
+      <Showcase title="PROJECTS" content="coming soon.."/>
+    </div>
   )
 }
 

@@ -3,8 +3,8 @@ import { style } from "@vanilla-extract/css";
 
 export const Showcase = style({
     backgroundColor: `${vars.colors.complementary}`,
-    minHeight: '30em',
-    height: '32vw'
+    minHeight: '26em',
+    height: '28vw'
 })
 
 export const ShowcaseContent = style({
@@ -31,6 +31,3 @@ export const SecondaryHeading = style({
     marginBottom: '20px'
 })
 
-export const EmailButton = style({
-    transform: ''
-})

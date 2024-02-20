@@ -21,3 +21,12 @@ export const Button = style({
 export const ButtonContent = style({
 
 })
+
+export const EmailButton = style({
+    transform:' translate(2%, 200%)',
+
+})
+
+export const ButtonLink = style({
+    width: '20px'
+})
