@@ -4,7 +4,8 @@ import { style } from "@vanilla-extract/css";
 export const Showcase = style({
     backgroundColor: `${vars.colors.complementary}`,
     minHeight: '26em',
-    height: '28vw'
+    height: '28vw',
+    maxHeight: '28em'
 })
 
 export const ShowcaseContent = style({
