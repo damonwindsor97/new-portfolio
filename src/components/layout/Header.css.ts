@@ -6,13 +6,32 @@ export const Header = style({
     color: `${vars.colors.primary}`,
     fontFamily: `${vars.fonts.body}`,
     width: '100%',
-    height: '5em'
+    height: '5em',
+
+
+    '@media': {
+        'screen and (max-width: 768px)': {
+            height: '2em'
+        },
+        '(prefers-reduced-motion)': {
+          transitionProperty: 'color'
+        }
+    }
 })
 
 export const NavMenu = style({
     display: 'inline-block',
     float: 'right',
-    marginRight: '5em'
+    marginRight: '5em',
+
+    '@media': {
+        'screen and (max-width: 768px)': {
+            marginRight: '2em'
+        },
+        '(prefers-reduced-motion)': {
+          transitionProperty: 'color'
+        }
+    }
 })
 
 export const NavItem = style({
@@ -23,6 +42,17 @@ export const NavItem = style({
     cursor: 'pointer',
     ':hover': {
         color: `${vars.colors.darkComplentary}`
+    },
+
+
+    '@media': {
+        'screen and (max-width: 768px)': {
+            marginRight: '0.5em',
+            fontSize: `${vars.fontSize["3x"]}`,
+        },
+        '(prefers-reduced-motion)': {
+          transitionProperty: 'color'
+        }
     }
 })
 
@@ -31,3 +61,8 @@ export const NavLink = style({
         color: `${vars.colors.darkComplentary}`
     }
 })
+
+// Media Queries
+const myStyle = style({
+    
+  });

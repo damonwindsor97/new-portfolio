@@ -6,7 +6,16 @@ export const Footer = style({
     textAlign: 'center',
     borderTop: 'black solid 1px',
     width: '75%',
-    margin: 'auto'
+    margin: 'auto',
+
+    '@media': {
+        'screen and (max-width: 768px)': {
+            width: '75%',
+        },
+        '(prefers-reduced-motion)': {
+          transitionProperty: 'color'
+        }
+    }
 })
 
 export const Content = style({
