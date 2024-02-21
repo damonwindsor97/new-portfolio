@@ -1,4 +1,6 @@
+
 import * as styles from './Button.css'
+
 
 function Button({content, linkTo}) {
   return (
