@@ -15,6 +15,11 @@ export const Header = style({
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            height: '3em',
+            
         }
     }
 })
@@ -26,10 +31,16 @@ export const NavMenu = style({
 
     '@media': {
         'screen and (max-width: 768px)': {
-            marginRight: '2em'
+            marginRight: '2em',
+            float: 'none'
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            marginRight: 'none',
+            float: 'none'
         }
     }
 })
@@ -52,8 +63,14 @@ export const NavItem = style({
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            
         }
-    }
+    },
+
+
 })
 
 export const NavLink = style({

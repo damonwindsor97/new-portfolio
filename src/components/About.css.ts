@@ -2,7 +2,6 @@ import { vars } from "../styles/themes.css";
 import { style } from "@vanilla-extract/css";
 
 export const AboutSection = style({
-    marginTop: '2em',
     marginBottom: '6em',
 
     '@media': {
@@ -12,6 +11,10 @@ export const AboutSection = style({
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            
         }
     }
 })
@@ -24,11 +27,15 @@ export const InfoSection = style({
 
     '@media': {
         'screen and (max-width: 768px)': {
-            fontSize: '12px',
-            width: '40%'
+            fontSize: '16px',
+            width: '100%'
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            width: '100%'
         }
     }
 })
@@ -38,10 +45,16 @@ export const Info = style({
 
     '@media': {
         'screen and (max-width: 768px)': {
-            transform: 'translate(0%, 10%)',
+            transform: 'none',
+            margin: '10px'
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            transform: 'none',
+            margin: '10px'
         }
     }
 })
@@ -53,12 +66,20 @@ export const PhotoSection = style({
 
     '@media': {
         'screen and (max-width: 768px)': {
-            width: '60%',
-            transform: 'translate(10%, -80%)',
-            marginLeft: '0em',
+            width: '100%',
+            margin: "auto",
+            display: 'flex',
+            justifyContent: 'center'
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            width: '100%',
+            margin: "auto",
+            display: 'flex',
+            justifyContent: 'center'
         }
     }
 })
@@ -68,14 +89,22 @@ export const Photo = style({
 
     '@media': {
         'screen and (max-width: 768px)': {
-            width: '150px'
+            width: '150px',
+            margin: '20px'
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            
         }
     }
 })
 
 export const ComplementaryText = style({
     color: `${vars.colors.complementary}`
+})
+export const DarkComplementaryText = style({
+    color: `${vars.colors.darkComplentary}`
 })

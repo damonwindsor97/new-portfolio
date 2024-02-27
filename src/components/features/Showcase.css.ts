@@ -7,6 +7,7 @@ export const Showcase = style({
     height: '28vw',
     maxHeight: '28em',
 
+
     '@media': {
         'screen and (max-width: 768px)': {
             minHeight: '20em',
@@ -15,6 +16,12 @@ export const Showcase = style({
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            width:'100%',
+            minHeight: '20em',
+            height: '20vw',
         }
     }
 })
@@ -33,6 +40,10 @@ export const ShowcaseContent = style({
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            
         }
     }
 })
@@ -50,6 +61,11 @@ export const MainHeading = style({
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            marginRight: '0',
+            fontSize: `${vars.fontSize["4x"]}`,
         }
     }
 })
@@ -70,6 +86,12 @@ export const SecondaryHeading = style({
         },
         '(prefers-reduced-motion)': {
           transitionProperty: 'color'
+        },
+
+        'screen and (max-width: 1000px) and (min-width: 769px)': {
+            marginRight: '0.5em',
+            fontSize: `${vars.fontSize["2x"]}`,
+            width: '35em',
         }
     }
 })
