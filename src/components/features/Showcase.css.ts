@@ -7,7 +7,6 @@ export const Showcase = style({
     height: '28vw',
     maxHeight: '28em',
 
-
     '@media': {
         'screen and (max-width: 768px)': {
             minHeight: '20em',
@@ -32,7 +31,6 @@ export const ShowcaseContent = style({
     color: `${vars.colors.primary}`,
     paddingTop: '4em',
 
-    
     '@media': {
         'screen and (max-width: 768px)': {
             paddingTop: '3em'

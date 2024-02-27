@@ -3,6 +3,7 @@ import { style } from "@vanilla-extract/css";
 
 export const AboutSection = style({
     marginBottom: '6em',
+    marginTop: '6em',
 
     '@media': {
         'screen and (max-width: 768px)': {
@@ -14,7 +15,7 @@ export const AboutSection = style({
         },
 
         'screen and (max-width: 1000px) and (min-width: 769px)': {
-            
+
         }
     }
 })
@@ -41,7 +42,7 @@ export const InfoSection = style({
 })
 
 export const Info = style({
-    transform: 'translate(2%, 40%)',
+
 
     '@media': {
         'screen and (max-width: 768px)': {
@@ -61,8 +62,8 @@ export const Info = style({
 
 export const PhotoSection = style({
     width: '35%',
-    display: 'inline-block',
-    marginLeft: '1em',
+    display: 'flex',
+float: 'right',
 
     '@media': {
         'screen and (max-width: 768px)': {

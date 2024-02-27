@@ -1,8 +1,5 @@
 import * as styles from './Showcase.css'
 
-import Button from '../common/Button'
-
-
 function Showcase({title, content, button}) {
   return (
     <div className={styles.Showcase}>
