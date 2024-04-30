@@ -8,5 +8,6 @@ export const app = style({
 })
 
 export const appContent = style({
-    flex: 1
+    flex: 1,
+    fontFamily: `${vars.fonts.body}`
 })

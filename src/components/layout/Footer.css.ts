@@ -8,6 +8,7 @@ export const Footer = style({
     width: '75%',
     margin: 'auto',
 
+
     '@media': {
         'screen and (max-width: 768px)': {
             width: '75%',
