@@ -4,6 +4,7 @@ import { style } from "@vanilla-extract/css";
 export const AboutSection = style({
     marginBottom: '6em',
     marginTop: '6em',
+    fontFamily: `${vars.fonts.body}`,
 
     '@media': {
         'screen and (max-width: 768px)': {
@@ -53,7 +54,7 @@ export const Info = style({
           transitionProperty: 'color'
         },
 
-        'screen and (max-width: 1000px) and (min-width: 769px)': {
+        'screen and (max-width: 1100px) and (min-width: 769px)': {
             transform: 'none',
             margin: '10px'
         }
@@ -76,7 +77,7 @@ float: 'right',
           transitionProperty: 'color'
         },
 
-        'screen and (max-width: 1000px) and (min-width: 769px)': {
+        'screen and (max-width: 1100px) and (min-width: 769px)': {
             width: '100%',
             margin: "auto",
             display: 'flex',
@@ -97,7 +98,7 @@ export const Photo = style({
           transitionProperty: 'color'
         },
 
-        'screen and (max-width: 1000px) and (min-width: 769px)': {
+        'screen and (max-width: 1100px) and (min-width: 769px)': {
             margin: '20px'
         }
     }

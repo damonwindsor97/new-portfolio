@@ -8,8 +8,6 @@ export const ProjectsSection = style({
 export const ProjectBox = style({
     width: '75%',
     margin: 'auto',
-    borderBottom: 'solid black 1px',
-
     marginBottom: '1em'
 })
 
@@ -26,11 +24,11 @@ export const ProjectTitle = style({
 export const ProjectTech = style({
     margin: '10px 0px 10px 0',
     fontWeight: `${vars.fontWeight.light}`,
-
+    fontSize: `${vars.fontSize['2x']}`
 })
 
 export const ProjectDescription = style({
-    fontSize: `${vars.fontSize["2x"]}`,
+    fontSize: `${vars.fontSize["3x"]}`,
     width: '75%'
 })
 
