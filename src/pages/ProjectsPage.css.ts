@@ -8,12 +8,8 @@ export const ProjectsSection = style({
 export const ProjectBox = style({
     width: '75%',
     margin: 'auto',
-    marginBottom: '1em'
 })
 
-export const ProjectOne = style({
-    
-})
 
 export const ProjectTitle = style({
     textAlign: 'left',
@@ -22,7 +18,7 @@ export const ProjectTitle = style({
 })
 
 export const ProjectTech = style({
-    margin: '10px 0px 10px 0',
+    margin: '2px 0px 0px 0',
     fontWeight: `${vars.fontWeight.light}`,
     fontSize: `${vars.fontSize['2x']}`
 })
